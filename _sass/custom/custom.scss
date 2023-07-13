@@ -1,0 +1,49 @@
+.main-content,
+.breadcrumb-nav,
+.site-title,
+.nav-list,
+.site-footer {
+  direction: rtl;
+}
+
+.site-title,
+.breadcrumb-nav-list {
+  padding-right: 0;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  padding-right: initial;
+}
+.nav-list .nav-list-item > .nav-list {
+  padding-right: 0.75rem;
+}
+
+.nav-list .nav-list-item .nav-list-expander {
+  left: 0;
+  right: initial;
+}
+
+.main-content ul > li::before {
+  margin-right: -1.4em;
+}
+
+.side-bar {
+  right: 0;
+  @include mq(md) {
+    border-left: $border $border-color;
+    align-items: flex-start;
+  }
+}
+
+.main {
+  @include mq(md) {
+    margin-right: $nav-width-md;
+  }
+
+  @include mq(lg) {
+    margin-right: Max(
+      #{$nav-width},
+      calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
+    );
+  }
+}
