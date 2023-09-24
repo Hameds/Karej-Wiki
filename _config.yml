@@ -5,3 +5,15 @@ theme: just-the-docs
 url: https://wiki.karej.ir
 
 footer_content: "با ❤️ تقدیم به توسعه‌دهندگان فارسی‌زبان. کاری از <a href=\"https://hamed.blog\">حامد</a>"
+
+callouts:
+  highlight:
+    color: yellow
+  important:
+    color: blue
+  new:
+    color: green
+  note:
+    color: purple
+  warning:
+    color: red

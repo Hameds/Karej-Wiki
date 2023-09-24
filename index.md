@@ -4,7 +4,7 @@ layout: default
 nav_order: 1
 ---
 
-{: .note }
+{: .highlight }
 > اطلاعات این ویکی به صورت فعال در حال بروزرسانی است.
 
 
